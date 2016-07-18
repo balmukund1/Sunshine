@@ -15,8 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.hawx.android.sunshine.app.R;
-
 public class DetailActivity extends ActionBarActivity {
 
 

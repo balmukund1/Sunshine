@@ -18,11 +18,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import com.android.sunshine.app.DetailActivity;
-import com.hawx.android.sunshine.app.BuildConfig;
-import com.hawx.android.sunshine.app.R;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

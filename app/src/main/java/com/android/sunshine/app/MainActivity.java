@@ -1,5 +1,6 @@
 package com.android.sunshine.app;
 
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -9,8 +10,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.hawx.android.sunshine.app.R;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -26,6 +25,37 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new ForcastFragment())
                     .commit();
         }
+        Log.d(LOG_TAG, "********** onCreate()");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(LOG_TAG, "********** onStart()");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(LOG_TAG, "********** onStop()");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(LOG_TAG, "********** onPause()");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(LOG_TAG, "********** onResume()");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(LOG_TAG, "********** onDestroy()");
     }
 
     @Override
